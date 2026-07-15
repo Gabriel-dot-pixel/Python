@@ -9,13 +9,13 @@ a = float(input('Digite o comprimento da reta a: '))
 b = float(input('Digite o comprimento da reta b: '))
 c = float(input('Digite o comprimento da reta c: '))
 if a + b > c and a + c > b and b + c > a:
-    print('As retas podem formar um triângulo')
+    print('As retas podem formar um triângulo', end=' ')
     if a == b and a == c:
-        print('As retas formarão um triângulo Equilátero')
+        print('Equilátero')
     elif a == b or a == c:
-        print('As retas formarão um triângulo Isósceles')
+        print('Isósceles')
     else:
-        print('As retas formarão um triângulo Escaleno')
+        print('Escaleno')
 else:
     print('As retas não podem formar um triângulo')
     

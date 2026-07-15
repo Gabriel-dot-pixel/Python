@@ -6,18 +6,22 @@ Desenvolva uma lógica que leia o peso e a altura de uma pessoa, calcule seu IMC
 – 30 até 40: Obesidade
 – Acima de 40: Obesidade mórbida
 '''
-from math import pow
 print('====== DESAFIO 043 ======')
 peso = float(input('Digite o seu peso: '))
 altura = float(input('Digite a sua altura: '))
-imc = peso / pow(altura, 2)
+imc = peso / (altura ** 2)
 if imc < 18.5:
+    print(f'O seu imc é {imc:.1f}')
     print('Você está abaixo do peso')
 elif imc < 25:
+    print(f'O seu imc é {imc:.1f}')
     print('Você está no seu peso ideal')
 elif imc < 30:
-    print('Você está com sobrepeso')
+    print(f'O seu imc é {imc:.1f}')
+    print('Você está em sobrepeso')
 elif imc < 40:
-    print('Você está com obesidade')
+    print(f'O seu imc é {imc:.1f}')
+    print('Você está em obesidade')
 else:
-    print('Você esta com obesidade morbida')
+    print(f'O seu imc é {imc:.1f}')
+    print('Você esta em obesidade morbida')

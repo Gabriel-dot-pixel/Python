@@ -13,4 +13,4 @@ if media <= 5.0:
 elif media <= 6.9:
     print('RECUPERAÇÃO')
 else:
-    print('APROVADO')
+    print('APROVADO') 

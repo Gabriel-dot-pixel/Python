@@ -11,13 +11,14 @@ print('====== DESAFIO 041 ======')
 ano = int(input('Digite o seu ano de nascimento: '))
 hoje = date.today().year
 idade = hoje - ano
+print(f'Você tem {idade} anos')
 if idade <= 9:
-    print(f'Você tem {idade} anos e está na classificação MIRIM de natação')
+    print(f'Classificação: MIRIM')
 elif idade <= 14:
-    print(f'Você tem {idade} anos e está na classificação INFANTIL de natação')
+    print(f'Classificação: INFANTIL')
 elif idade <= 19:
-    print(f'Você tem {idade} anos e está na classificação JÚNIOR de natação')
+    print(f'Classificação: JÚNIOR')
 elif idade <= 20:
-    print(f'Você tem {idade} anos e está na classificação SÊNIOR de natação')
+    print(f'Classificação: SÊNIOR')
 else:
-    print(f'Você tem {idade} anos e está na classificação MASTER de natação')
+    print(f'Classificação: MASTER')
