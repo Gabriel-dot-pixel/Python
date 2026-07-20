@@ -7,9 +7,23 @@ print('-=-' * 20)
 print('Estou pensando em um número entre 0 e 10...')
 print('-=-' * 20)
 sleep(2)
-palpite = int(input('Em que número eu pensei? '))
 tentativa = 0
-while palpite != computador:
-    palpite = int(input('Você errou, tente novamente: '))
+lFlag = False
+while not lFlag:
+    palpite = int(input('Em que número eu pensei? '))
     tentativa += 1
-print(f'Parabéns! Você acertou, mas precisou de {tentativa} tentativas para ganhar')
+    if palpite == computador:
+        lFlag = True
+    else:
+        if palpite < computador:
+            palpite = int(input('Um pouco mais... Tenta denovo: '))
+            tentativa += 1
+        else:
+            palpite = int(input('Um pouco menos... Tenta denovo: '))
+            tentativa += 1
+if tentativa == 1:
+    print('Parabéns! Você acertou na primeira tentativa')
+elif tentativa < 4:
+    print(f'Parabéns! Você acertou e só precisou de {tentativa} tentativas para ganhar')
+else:
+    print(f'Parabéns! Você acertou, mas precisou de {tentativa} tentativas para ganhar')
