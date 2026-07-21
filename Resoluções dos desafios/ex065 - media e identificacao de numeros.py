@@ -6,16 +6,17 @@ quant = 0
 r = 'S'
 while r != 'N':
     n = int(input('Digite um número: '))
-    if quant == 0:
-        maior = n
-        menor = n
-    if n > maior:
-        maior = n
-    elif n < menor:
-        menor = n
     s += n
     quant += 1
-    r = str(input('Você quer digitar mais números (S/N)? ')).strip().upper()
+    if quant == 1:
+        maior = n
+        menor = n
+    else:
+        if n > maior:
+            maior = n
+        else:
+            menor = n
+    r = str(input('Você quer digitar mais um número (S/N)? ')).strip().upper()
     while r != 'S' and r != 'N':
         r = str(input('\033[31mRESPOSTA INVÁLIDA!\033[m Digite novamente: ')).strip().upper()
 media = s / quant

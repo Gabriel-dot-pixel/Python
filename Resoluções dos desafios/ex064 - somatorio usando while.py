@@ -5,7 +5,7 @@ cont = 0
 s = 0
 while n != 999:
     n = int(input('Digite um número (digite 999 para parar o programa): '))
-    cont += 1
     if n != 999:
         s += n
+        cont += 1
 print(f'Foram digitados {cont} números e a soma entre eles é {s}')

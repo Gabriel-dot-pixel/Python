@@ -4,13 +4,12 @@ n = int(input('Digite quantos elementos da Sequência de Fibonacci você quer ve
 prim = 0
 sec = 1
 cont = 0
+print(prim, end=' -> ')
+print(sec, end=' -> ')
 while cont < n:
-    if cont == 0:
-        print(prim)
-    if cont == 1:
-        print(sec)
     prox = prim + sec
     prim = sec
     sec = prox
-    print(prox)
+    print(prox, end=' -> ')
     cont += 1
+print('FIM')

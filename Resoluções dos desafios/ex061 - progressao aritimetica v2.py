@@ -2,7 +2,10 @@
 print(f'{" DESAFIO 061 ":=^25}')
 i = int(input('Digite o primeiro termo da PA: '))
 r = int(input('Digite a razão da PA: '))
-d = i + (10-1) * r
-while i < d + r:
-    print(i)
-    i += r
+t = i
+cont = 1 
+while cont <= 10:
+    print(t, end=' -> ')
+    t += r
+    cont += 1
+print('FIM')
