@@ -9,8 +9,7 @@ quant = 1
 quant18 = 0
 quanthomem = 0
 mulher20 = 0
-r = 'S'
-while r == 'S':
+while True:
     print(f'---- {quant}ª Pessoa ----')
     idade = int(input('Idade: '))
     sexo = str(input('Sexo: (M/F) ')).strip().upper()[0]
@@ -24,6 +23,8 @@ while r == 'S':
         mulher20 += 1
     quant += 1
     r = str(input('Quer continuar? (S/N) ')).strip().upper()[0]
+    if r == 'N':
+        break
     while r not in 'SN':
         r = str(input('\033[31mVALOR INVÁLIDO! Digite novamente: ')).strip().upper()[0]
 print(f'{quant18} pessoas com mais de 18 anos foram cadastradas')
