@@ -4,7 +4,8 @@ Depois disso, mostre a listagem de números e indique o menor e o maior valor qu
 '''
 from random import randint
 print(f'{" DESAFIO 074 ":=^25}')
-tupla = ()
+numeros = ()
+# É possivel tambem fazer numeros = (randint(0, 10), randint(0, 10), randint(0, 10), randint(0, 10), randint(0, 10))
 for i in range(0, 5):
     sorteado = randint(0, 10)
     if i == 0:
@@ -15,7 +16,9 @@ for i in range(0, 5):
             menor = sorteado
         elif sorteado > maior:
             maior = sorteado
-    tupla += (sorteado,)
-print(f'Os valores sorteados foram: {tupla}')
+    numeros += (sorteado,)
+print(f'Os valores sorteados foram: {numeros}')
+# No Python existe um método max(n) que retorna o maior valor dentro de uma tupla, pode ser usado em outras estruturas como listas e dicionarios
 print(f'O maior valor sorteado foi: {maior}')
+# No Python existe um método min(n) que retorna o menor valor dentro de uma tupla, pode ser usado em outras estruturas como listas e dicionarios
 print(f'O menor valor sorteado foi: {menor}')

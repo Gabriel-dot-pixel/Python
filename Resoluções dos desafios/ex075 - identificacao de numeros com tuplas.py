@@ -10,14 +10,12 @@ pares = ()
 cont9 = 0
 for i in range(0, 4):
     n = int(input(f'Digite o {i+1}º número: '))
-    if n == 9:
-        cont9 += 1
     if n % 2 == 0:
         pares += (n,)
     numeros += (n,)
 print(f'Os números digitados foram: {numeros}')
-if cont9 > 0:
-    print(f'O número 9 apareceu {cont9} vezes')
+if numeros.count(9) > 0:
+    print(f'O número 9 apareceu {numeros.count(9)} vezes')
 else:
     print('O número 9 não apareceu nenhuma vez')
 if 3 in numeros:
