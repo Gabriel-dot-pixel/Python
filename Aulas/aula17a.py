@@ -26,3 +26,13 @@ print(valores)
 # Se você quiser a ordem reversa dos valores usando sort, basta usar sort(reverse=True)
 valores.sort(reverse=True)
 print(valores)
+# Tambem é possivel usar as mesmas estruturas de repetição usadas para mostrar valores das tuplas em listas
+valores = []
+valores.append(5)
+valores.append(9)
+valores.append(4)
+for v in valores:
+    print(f'{v}... ', end=' ')
+print('\n')
+for i, v in enumerate(valores):
+    print(f'Na posição {i} esta o valor {v}')
