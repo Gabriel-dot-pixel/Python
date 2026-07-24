@@ -9,10 +9,11 @@ for i in range(0, 5):
     numeros.append(n)
 maior = max(numeros)
 menor = min(numeros)
+print(f'O maior valor digitado foi {maior} e esta nas posições ', end='')
 for pos, n in enumerate(numeros):
     if n == maior:
-        print(f'O maior valor digitado foi {maior} e esta nas posições ', end='')
-        print(f'{pos}... ')
+        print(f'{pos}... ', end='')
+print(f'\nO menor valor digitado foi {menor} e esta nas posições ', end='')
+for pos, n in enumerate(numeros):
     if n == menor:
-        print(f'O menor valor digitado foi {menor} e esta nas posições ', end='')
-        print(f'{pos}... ')
+        print(f'{pos}... ', end='')
