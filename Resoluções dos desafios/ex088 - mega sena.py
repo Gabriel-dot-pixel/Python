@@ -16,3 +16,4 @@ for i in range(0, quant):
     jogos.append(palpite[:])
     palpite.clear()
     print(f'Jogo {i+1}: {jogos[i]}')
+print(f'{" BOA SORTE! ":=^40}')

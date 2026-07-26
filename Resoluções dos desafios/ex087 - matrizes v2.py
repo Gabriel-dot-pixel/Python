@@ -4,15 +4,14 @@ A) A soma de todos os valores pares digitados
 B) A soma dos valores da terceira coluna
 C) O maior valor da segunda linha
 '''
-matriz = [[], [], []]
+matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 spar = 0
 stercol = 0
 for l in range(0, 3):
     for c in range(0, 3):
-        n = int(input(f'Posição [{l}][{c}]: '))
-        if n % 2 == 0:
+        matriz[l][c] = int(input(f'Posição [{l}][{c}]: '))
+        if matriz[l][c] % 2 == 0:
             spar += n
-        matriz[l].append(n)
 print('=' * 40)
 for l in range(0, 3):
     for c in range(0, 3):
